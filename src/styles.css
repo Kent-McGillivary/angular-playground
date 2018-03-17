@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+
+circle.node {
+    fill: red;
+    stroke: none;
+
+  }
+
+         rect.node {
+            stroke: black;
+    fill: white;
+    stroke-width: 1px;
+
+  }
+  
+  line.link {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+   
+  }
+
