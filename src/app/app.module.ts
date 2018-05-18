@@ -14,11 +14,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import {NgxTreeSelectModule, TreeSelectDefaultOptions} from 'ngx-tree-select';
+import { OrgDetailComponent } from './d3/orgChart/org-detail.component';
 
 
 const appRoutes: Routes = [
-  { path: 'home', component: AppComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path:'org', component:OrgDetailComponent},
+  { path: 'home', component: AppComponent }
+  //{ path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 const treeSelect = new TreeSelectDefaultOptions();
@@ -35,7 +37,8 @@ treeSelect.allowParentSelection=true;
   declarations: [
     AppComponent,
     SingleSelectComponent,
-    TreeDetail
+    TreeDetail,
+    OrgDetailComponent
   ],
   imports: [
     BrowserModule,

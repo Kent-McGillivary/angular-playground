@@ -1,0 +1,78 @@
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+  input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+ 
+
+  .saved-msg {
+    color:greenyellow;
+  }
+  
+  .canvas-graph {
+    width:900px;
+    height:800px;
+    /*border: 1px solid black;*/
+  }
+
+
+  :host ::ng-deep .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+  }
+  
+  :host ::ng-deep .node text {
+    font: 12px sans-serif;
+  }
+
+  .graph-toolbar {
+    padding-left: 5px;
+    background-color: #f7f7f7;
+    /*
+    box-shadow: 0 2px 10px  rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);  
+    height: 30px;
+   
+
+  }
+  .graph-toolbar button {
+    margin-top: 4px;
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding: 0;
+    cursor: pointer;
+}
+
+.graph-toolbar .zoom-in-btn {
+
+  background-image: url(/assets/magnify-16.svg);
+}
+
+.graph-toolbar .zoom-in-btn:hover {
+  background-color: #dedede;
+}
+  
+  /*
+  Copyright 2017 Google Inc. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at http://angular.io/license
+  */
+
+  
